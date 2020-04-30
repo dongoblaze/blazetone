@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id="body">
+    
+<h1>Click ME</h1>
+
+    <div id="datejoined"> <h6> {{ date}} </h6> </div>
+    
+    
+    <!-- <img  class="img "src="{{ url_for("static", filename='css/background.jpg')}}"></img> -->
+
+    <a class="blaze" href="{{ url_for('first') }}">
+    <img  class="blaze "src="{{ url_for("static", filename='css/car.gif')}}"></img> 
+</a>
+</div>
+{% endblock %}
