@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HomePage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  
+  <header>
+    <video loop muted autoplay playsinline id="myVideo">
+        <source src="static/css/car.mp4" type="video/mp4" />
+    </video>
+    <div class="banner">
+       <div class="banner-text">
+        <img class="w3-container w3-center w3-animate-zoom" src="static/css/logo.png" width="100" height="100" >
+          <div class="section">
+
+           <h3 class="w3-container w3-center w3-animate-zoom" style="font-size:80px" > Welcome to Easy Parking Ap</h3>
+
+          </div><br><br>
+        <!button type="submit" class="brk-btn" ><!/button>
+        <div class="box">
+        <div class="w3-container w3-center w3-animate-zoom">
+          <a href="{{ url_for('login') }}" style="margin-top:210px;" class="btn btn-white btn-animation-1">LOGIN</a> 
+          <a href="{{ url_for('register') }}" style="margin-left:2em;" class="btn btn-white btn-animation-1">SIGNUP</a> <br><br><br>
+          <!-- <a href="/chat2/" class="btn btn-white btn-animation-1">Online chat</a>  
+             <a href="purchase" style="margin-left:2em;" class="btn btn-white btn-animation-1">Make payments</a> <br><br><br> -->
+          <!-- <a href="/aboutus/" class="btn btn-white btn-animation-1">About us</a>   <a href="/maps/" style="margin-left:2em;"  class="btn btn-white btn-animation-1">Maps</a> -->
+        </div>
+        </div>
+       </div>
+    </div>
+  </header>
+</body>
+</html>

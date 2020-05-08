@@ -3,8 +3,12 @@ body {
   font-size: 14px;
   line-height: 1.5;
   /* background-image: url({{ url_for('static', filename='css/background.jpg') }}) */
-  
+  /* background-color: yellow; */
    background-image: url("/static/css/back.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+
 
 }
 

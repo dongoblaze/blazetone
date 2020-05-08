@@ -17,7 +17,10 @@ socketio=SocketIO(app )
 ###
 # Routing for your application.
 ###
-
+@app.route('/')
+def home():
+    return render_template('home.html')
+    
 @app.route('/register', methods=['GET','POST'])
 def register():
     """accepts user information and save it to the database"""  
@@ -90,7 +93,7 @@ def logout():
 
 
 @app.route('/chat2')
-@login_required
+# @login_required
 def chat2():
     date = format_date_joined()
     return render_template('chat2.html',date=date)
