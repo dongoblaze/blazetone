@@ -1,0 +1,20 @@
+USing the command line
+First 
+ensure your in the project folder
+
+This ceates the virtual envirnonent
+python -m venv venv  
+
+This starts the starts the virtual environment
+.\venv\Scripts\activate
+
+
+Install the libraries
+ pip install -r requirements.txt
+
+
+
+THEn to the run the application
+python run.py
+
+Open the browser to http://localhost:8080/
